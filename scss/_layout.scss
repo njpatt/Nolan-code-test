@@ -1,0 +1,38 @@
+// Layout styles
+.container {
+  padding: 0 15px;
+}
+
+.container-fluid {
+  padding: 0 15px;
+  max-width: 95vw;
+}
+
+// Spacing utilities
+.section-spacing {
+  margin: 80px 0;
+}
+
+// Custom row spacing
+.row {
+  &.tight-spacing {
+    margin-left: -8px;
+    margin-right: -8px;
+
+    > [class*="col-"] {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+}
+
+// Responsive adjustments
+@include media-breakpoint-down(md) {
+  .hero {
+    text-align: center;
+
+    .btn-group {
+      justify-content: center;
+    }
+  }
+}
