@@ -22,6 +22,7 @@
 }
 
 .event-card {
+  position: relative;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
@@ -30,8 +31,21 @@
     font-weight: $font-weight-bold;
     margin-bottom: 1rem;
   }
+  .card-info-banner {
+    position: relative;
+    .date-shape {
+      position: absolute;
+      top: -30%;
+      right: 0;
 
-  .card-body {
+      img {
+        @include media-breakpoint-up(xxl) {
+          width: 8vw;
+        }
+
+        height: auto;
+      }
+    }
   }
 }
 
