@@ -21,6 +21,7 @@ function serve() {
 
   // Watch SCSS files for changes
   gulp.watch("./scss/**/*.scss", compileSass);
+  // Gulp watches
 
   // Watch HTML and JS files for changes and reload
   gulp.watch("./*.html").on("change", browserSync.reload);
@@ -31,3 +32,7 @@ function serve() {
 gulp.task("sass", compileSass);
 gulp.task("build", gulp.series(compileSass));
 gulp.task("default", gulp.series(compileSass, serve));
+
+gulp.task("watch", function () {
+  gulp.watch("./scss/**/*.scss", gulp.series(compileSass)); // Corrected SCSS watch
+});

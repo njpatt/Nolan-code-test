@@ -23,13 +23,17 @@
 
 .event-card {
   position: relative;
-  border-radius: 8px;
+  border-radius: 5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
 
   .card-title {
     font-weight: $font-weight-bold;
     margin-bottom: 1rem;
+  }
+
+  .card-img-top {
+    border-radius: 5px !important;
   }
   .card-info-banner {
     position: relative;
@@ -51,9 +55,42 @@
 
 // Navbar
 .navbar {
+  position: relative;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   .navbar-brand {
-    font-weight: $font-weight-bold;
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      bottom: 20%;
+      height: 120%;
+    }
+  }
+
+  .nav-item {
+    @include media-breakpoint-up(xl) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.btn {
+  &.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+
+    &:hover {
+      background-color: darken($primary, 10%);
+      border-color: darken($primary, 10%);
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $secondary;
+    border-color: $secondary;
+
+    &:hover {
+      background-color: darken($secondary, 10%);
+      border-color: darken($secondary, 10%);
+    }
   }
 }
