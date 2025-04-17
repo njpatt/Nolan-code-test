@@ -40,3 +40,37 @@
 .social-card {
   height: 400px !important;
 }
+
+.glide__arrows {
+  /* Styles for the container of the arrows */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  transform: translateY(-50%);
+}
+
+.glide__arrow {
+  /* Styles for individual arrows */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.glide__arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.glide__arrow--left {
+  /* Styles specific to the left arrow */
+}
+
+.glide__arrow--right {
+  /* Styles specific to the right arrow */
+}

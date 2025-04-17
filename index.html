@@ -210,7 +210,7 @@
     <section id="social-contact">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xxl-6">
+                <div class="col-xl-6">
                     <h2>GET SOCIAL</h2>
                     <p class="fs-3">Stay Connected Wherever You Are!</p>
                     <div class="card shadow-lg mt-4">
@@ -238,12 +238,15 @@
                                                         <h4 class="text-primary">Follow <span class="text-highlight">@ CHVENUE</span></h4>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="mb-5 me-5">
-                                                            <div class="glide__arrows float-end" data-glide-el="controls">
-                                                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-                                                                    < </button>
-                                                                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"> > </button>
-                                                            </div>
+                                                        <div class="glide__arrows float-end" data-glide-el="controls">
+                                                            <button class="carousel-control-prev bg-primary" type="button" data-glide-dir="<">
+                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Previous</span>
+                                                            </button>
+                                                            <button class="carousel-control-next bg-primary" type="button" data-glide-dir=">">
+                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Next</span>
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -311,7 +314,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-6">
+                <div class="col-xl-6">
                     <h2>GET DIRECTIONS</h2>
                     <p class="fs-3">Map Out Your Trip</p>
                 </div>
@@ -328,8 +331,14 @@
             type: 'carousel',
             perView: 2.5,
             breakpoints: {
+                1600: {
+                    perView: 1.5
+                },
                 800: {
                     perView: 1.5
+                },
+                600: {
+                    perView: 1
                 }
             }
         }
