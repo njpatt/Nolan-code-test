@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nolan Patterson | CarbonHouse Code Test</title>
     <link rel="stylesheet" href="css/main.css">
+    <!-- Required Glide Core stylesheet -->
+    <link rel="stylesheet" href="css/glide.core.min.css">
 </head>
 
 <body>
@@ -27,7 +29,7 @@
                     <div class="mx-3">
                         <img src="img/icons/twitter.svg" alt="">
                     </div>
-                    <div class="mx-3 ">
+                    <div class="mx-3 w-25 ">
                         <input type="text" class="form-control rounded-pill bg-light border-0 px-4" placeholder="SEARCH EVENTS">
                     </div>
                     <div class="mx-3">
@@ -79,20 +81,22 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 gx-5 justify-content-center">
                 <div class="col mb-4">
                     <div class="event-card shadow-lg">
-                        <img class="card-img-top" src="img/event-card/the-weeknd.png" alt="Title" />
-                        <div class="card-info-banner bg-dark px-4 py-2">
-                            <h5 class=" fs-4 text-highlight">JULY 28, 2023</h5>
-                            <div class="date-shape">
-                                <div class="position-relative text-center">
-                                    <img class="img-fluid" src="img/event-card/date-shape.svg" alt="Side profile shot of the weekend against a red circle background">
-                                    <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">Friday</h4>
+                        <a class=" disabled" href="index.html/buy-tickets" alt="Buy Tickets">
+                            <img class="card-img-top" src="img/event-card/the-weeknd.png" alt="Title" />
+                            <div class="card-info-banner bg-dark px-4 py-2">
+                                <h5 class=" fs-4 text-highlight">JULY 28, 2023</h5>
+                                <div class="date-shape">
+                                    <div class="position-relative text-center">
+                                        <img class="img-fluid" src="img/event-card/date-shape.svg" alt="Side profile shot of the weekend against a red circle background">
+                                        <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">Friday</h4>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-body text-center py-5">
-                            <h4 class="card-title fs-2 text-uppercase">The Weeknd</h4>
-                            <p class="card-text fs-3">After Hours Tour</p>
-                        </div>
+                            <div class="card-body text-center py-5">
+                                <h4 class="card-title fs-2 text-uppercase">The Weeknd</h4>
+                                <p class="card-text fs-3">After Hours Tour</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col mb-4">
@@ -196,6 +200,7 @@
                     <div class="newsletter-box p-5">
                         <h2 class="text-white display-3">NEWSLETTER SIGNUP</h2>
                         <p class="text-white fs-4">Stay updated on the best concerts and most hip events!</p>
+                        <a class="btn btn-primary BTN-LG z-2 w-50" href="#">GET CONNECTED</a>
                     </div>
                 </div>
             </div>
@@ -208,7 +213,7 @@
                 <div class="col-xxl-6">
                     <h2>GET SOCIAL</h2>
                     <p class="fs-3">Stay Connected Wherever You Are!</p>
-                    <div class="card mt-4">
+                    <div class="card shadow-lg mt-4">
                         <ul class="nav nav-pills nav-justified " id="tabButtons" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link social-tab active " id="tab1-button" data-bs-toggle="tab" data-bs-target="#tab1-pane" type="button" role="tab" aria-controls="tab1-pane" aria-selected="true">
@@ -224,7 +229,74 @@
                         </ul>
                         <div class="tab-content mt-3" id="tabContent">
                             <div class="tab-pane fade show active" id="tab1-pane" role="tabpanel" aria-labelledby="tab1-button" tabindex="0">
-                                <p></p>
+                                <div class="container">
+                                    <div class="glide">
+                                        <div class="row justify-content-end">
+                                            <div class="col-lg-11">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <h4 class="text-primary">Follow <span class="text-highlight">@ CHVENUE</span></h4>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="mb-5 me-5">
+                                                            <div class="glide__arrows float-end" data-glide-el="controls">
+                                                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                                                    < </button>
+                                                                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"> > </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="glide__track" data-glide-el="track">
+                                                    <ul class="glide__slides">
+                                                        <li class="glide__slide">
+                                                            <div class="card bg-light" style="min-height: 400px;">
+                                                                <div class="card-body p-4">
+                                                                    <div class="d-flex align-items-center my-4">
+                                                                        <img src="img/icons/twitter.svg" alt="" class="me-2">
+                                                                        <h3 class="m-0">@ CHVENUE</h3>
+                                                                    </div>
+                                                                    <p class="card-text">Catch unforgettable music moments at @acllive and @3TENaustin in Austin, TX. With over 130 concerts per year, discover world-renowned and local artists up close! #ACLLive #3TENACLLive</p>
+                                                                </div>
+                                                                <div class="card-footer bg-primary">
+                                                                    <h4 class="text-white mb-0">8:14 PM / 3 APR 2023</h4>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="glide__slide">
+                                                            <div class="card bg-light" style="min-height: 400px;">
+                                                                <div class="card-body p-4">
+                                                                    <div class="d-flex align-items-center my-4">
+                                                                        <img src="img/icons/twitter.svg" alt="" class="me-2">
+                                                                        <h3 class="m-0">@ CHVENUE</h3>
+                                                                    </div>
+                                                                    <p class="card-text">Catch unforgettable music moments at @acllive and @3TENaustin in Austin, TX. With over 130 concerts per year, discover world-renowned and local artists up close! #ACLLive #3TENACLLive</p>
+                                                                </div>
+                                                                <div class="card-footer bg-primary">
+                                                                    <h4 class="text-white mb-0">8:14 PM / 3 APR 2023</h4>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="glide__slide">
+                                                            <div class="card bg-light" style="min-height: 400px;">
+                                                                <div class="card-body p-4">
+                                                                    <div class="d-flex align-items-center my-4">
+                                                                        <img src="img/icons/twitter.svg" alt="" class="me-2">
+                                                                        <h3 class="m-0">@ CHVENUE</h3>
+                                                                    </div>
+                                                                    <p class="card-text">Catch unforgettable music moments at @acllive and @3TENaustin in Austin, TX. With over 130 concerts per year, discover world-renowned and local artists up close! #ACLLive #3TENACLLive</p>
+                                                                </div>
+                                                                <div class="card-footer bg-primary">
+                                                                    <h4 class="text-white mb-0">8:14 PM / 3 APR 2023</h4>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="tab2-pane" role="tabpanel" aria-labelledby="tab2-button" tabindex="0">
                                 <div class="px-4">
@@ -250,6 +322,20 @@
     <!-- Scripts -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        const config = {
+            type: 'carousel',
+            perView: 2.5,
+            breakpoints: {
+                800: {
+                    perView: 1.5
+                }
+            }
+        }
+
+        new Glide('.glide', config).mount();
+    </script>
 </body>
 
 </html>
