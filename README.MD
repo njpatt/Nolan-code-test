@@ -1,0 +1,58 @@
+# 🚀 Carbon House Code Test
+
+**by Nolan Patterson**
+
+Welcome! This repo contains my code test submission for Carbon House. I had a great time building this and used the opportunity to revisit some foundational front-end tooling while also applying modern practices.
+
+---
+
+## 🧰 Tech Stack & Tooling
+
+**Frameworks / Bundles Used:**
+
+- 💠 [Bootstrap 5](https://getbootstrap.com/) + [Bootstrap Icons](https://icons.getbootstrap.com/)
+- 🎨 SASS
+- ⚙️ Gulp
+- 📸 [GlideJS](https://glidejs.com/)
+- 🗺️ Google Maps (Custom Embedded Map)
+
+---
+
+## 🌐 Live Demo
+
+**View it on GitHub Pages:**  
+👉 [GitHub Pages Link](#) <!-- Replace with your actual URL -->
+
+---
+
+## 🛠️ Getting Started
+
+To run this locally:
+
+```bash
+# Build the project
+npm run build
+
+# Start the development server
+npm run start
+
+ Notes: This project uses Gulp and several supporting Node modules. While I’m new to Gulp, I’ve included everything needed to prevent breaking changes. At my current role, we typically use CodeKit on macOS for compiling .kit files, but I deliberately avoided it here assuming your workflow may differ. This setup reflects a more universal, build-friendly approach.
+
+
+Reflection: This project brought back a lot of nostalgic energy—it reminded me of when I first started web development. Deciding on a tech stack, optimizing build tools, and planning structure made this feel like a full-circle moment. It was a great way to benchmark how far I’ve come over the past 5 years, and I really enjoyed working on it!
+
+
+TODO:
+- Import styles from figma
+Import fonts and match typography
+Make the grid and list view a simple filter so I can toggle between a mobile ready list view and the expansive grid view to reduce complexity
+Make top navigation sticky.
+Recenter navigation.
+Add proper svg and icons
+Ensure code is commented cleanly
+Clean up unused code
+Optimize Images to webp and ensure they are being loaded optimally
+Organize scss folders/files so they make more sense.
+Consider addressing deprecated warnings on build from mixin files.
+Host site on github pages for easy viewing without having to build
+```
