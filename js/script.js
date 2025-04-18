@@ -110,4 +110,24 @@ document.addEventListener("DOMContentLoaded", function () {
       card.classList.add("list-card");
     });
   });
+
+  // Glide.js Slider configuration - 2.5 slides shown on xxl screens..etc
+  const config = {
+    type: "carousel",
+    perView: 2.5,
+    breakpoints: {
+      1600: {
+        perView: 1.5,
+      },
+      800: {
+        perView: 1.5,
+      },
+      600: {
+        perView: 1.2,
+      },
+    },
+  };
+
+  new Glide(".glide", config).mount();
 });
+document.addEventListener("DOMContentLoaded", function () {});
