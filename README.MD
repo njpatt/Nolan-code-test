@@ -25,17 +25,6 @@ Welcome! This repo contains my code test submission for Carbon House. I had a gr
 
 ---
 
-## 🛠️ Getting Started
-
-To run this locally:
-
-```bash
-# Build the project
-npm run build
-
-# Start the development server
-npm run start
-
 ## 📝 Notes
 
 This project uses **Gulp** and several supporting Node modules. While I’m new to Gulp, I’ve included everything needed to prevent breaking changes.
@@ -66,4 +55,18 @@ Deciding on a tech stack, optimizing build tools, and planning structure made th
 - [ ] Reorganize SCSS folders/files for better clarity
 - [ ] Address deprecated mixin warnings during build
 - [ ] Host the site on GitHub Pages for easy viewing without needing to build
+
+---
+
+## 🛠️ Getting Started
+
+To run this locally:
+
+```bash
+# Build the project
+npm run build
+
+# Start the development server
+npm run start
+
 ```
