@@ -13,9 +13,9 @@
 <body>
     <!-- Navbar -->
     <div class="top-nav  sticky-top  bg-white">
-        <div class="container-fluid  d-none d-md-block ">
+        <div class="container-fluid  d-none d-lg-block position-relative ">
             <div class="row justify-content-end align-items-center h-100 ">
-                <div class="col d-flex align-items-center justify-content-end py-2">
+                <div class="col d-flex align-items-center justify-content-end py-3">
                     <h4 class="text-primary m-0">GET CONNECTED</h4>
                     <div class="mx-3">
                         <img src="img/icons/instagram.svg" alt="Instagram Logo ">
@@ -34,36 +34,17 @@
                     </div>
                     <div class="mx-3">
                     </div>
+                    <div class="position-absolute w-20">
+                        <a class="btn btn-highlight d-flex align-items-center justify-content-center h-100">Login</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="position-absolute end-0 top-0 h-100 d-flex align-items-center justify-content-end">
-            <a class="btn btn-primary px-4">Login</a>
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#" id="scroll-logo">
                     <img src="img/ch-venue-logo.svg" alt="">
                 </a>
-                <style>
-                    #scroll-logo {
-                        transition: transform 0.3s ease-in-out;
-                    }
-
-                    .scrolled #scroll-logo {
-                        transform: translateY(-2rem);
-                    }
-                </style>
-                <script>
-                    document.addEventListener("scroll", function () {
-                        const navbar = document.querySelector(".navbar");
-                        if (window.scrollY > 0) {
-                            navbar.classList.add("scrolled");
-                        } else {
-                            navbar.classList.remove("scrolled");
-                        }
-                    });
-                </script>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -82,6 +63,28 @@
                             <a class="nav-link" href="#">ABOUT US</a>
                         </li>
                     </ul>
+                    <div class="row justify-content-center align-items-center h-100 d-lg-none d-block ">
+                        <div class="col d-flex align-items-center justify-content-end py-3">
+                            <h4 class="text-primary m-0 text-white">GET CONNECTED</h4>
+                            <div class="mx-3">
+                                <img src="img/icons/instagram.svg" alt="Instagram Logo ">
+                            </div>
+                            <div class="mx-3">
+                                <img src="img/icons/twitter.svg" alt="Twitter Logo (old)">
+                            </div>
+                            <div class="mx-3">
+                                <img src="img/icons/facebook.svg" alt="Facebook Logo">
+                            </div>
+                            <div class="mx-3">
+                                <img src="img/icons/twitter.svg" alt="">
+                            </div>
+                            <div class="mx-3 w-25 ">
+                                <input type="text" class="form-control rounded-pill bg-light border-0 px-4" placeholder="SEARCH EVENTS">
+                            </div>
+                            <div class="mx-3">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -111,8 +114,8 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 gx-5 justify-content-center" id="events-container">
                 <!-- Event card 1: The Weeknd -->
                 <div class="col mb-4">
-                    <div class="event-card shadow-lg d-none d-md-block">
-                        <img class="card-img-top" src="img/event-card/the-weeknd.png" alt="Title" />
+                    <div id="gallery-card" class="event-card shadow-lg ">
+                        <img class="card-img-top" src="img/event-card/the-weeknd.webp" alt="Title" />
                         <div class="card-info-banner bg-dark px-4 py-2">
                             <h5 class="fs-4 text-highlight">JULY 28, 2023</h5>
                             <div class="date-shape">
@@ -127,11 +130,11 @@
                             <p class="card-text fs-3">After Hours Tour</p>
                         </div>
                     </div>
-                    <div class="row d-block d-md-none">
+                    <div class="row">
                         <div class="col-lg-12">
-                            <div class="event-card shadow-lg">
+                            <div id="list-card" class="event-card shadow-lg">
                                 <div class="row align-items-center px-4 py-3">
-                                    <div class="col-5"><img class="img-fluid rounded-2" src="img/event-card/the-weeknd.png" alt="Title" /></div>
+                                    <div class="col-5 col-lg-3"><img class="img-fluid rounded-2" src="img/event-card/the-weeknd.webp" alt="Title" /></div>
                                     <div class="col-7">
                                         <h4 class="card-title fs-3 text-uppercase">The Weeknd</h4>
                                         <p class="card-text fs-5">After Hours Tour</p>
@@ -155,8 +158,8 @@
                 </div>
                 <!-- Event card 2: BTS -->
                 <div class="col mb-4">
-                    <div class="event-card shadow-lg">
-                        <img class="card-img-top" src="img/event-card/bts-v2.png" alt="BTS band shot sitting on blue couch" />
+                    <div id="gallery-card" class="event-card shadow-lg  ">
+                        <img class="card-img-top" src="img/event-card/bts.webp" alt="BTS band shot sitting on blue couch" />
                         <div class="card-info-banner bg-dark px-4 py-2">
                             <h5 class="fs-4 text-highlight">JULY 30, 2023</h5>
                             <div class="date-shape">
@@ -171,11 +174,36 @@
                             <p class="card-text fs-3">Map Of The Soul Tour</p>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="list-card" class="event-card shadow-lg">
+                                <div class="row align-items-center px-4 py-3">
+                                    <div class="col-5 col-lg-3"><img class="img-fluid rounded-2" src="img/event-card/bts.webp" alt="Title" /></div>
+                                    <div class="col-7">
+                                        <h4 class="card-title fs-3 text-uppercase">BTS</h4>
+                                        <p class="card-text fs-5">Map Of The Soul Tour</p>
+                                    </div>
+                                </div>
+                                <div class="card-info-banner bg-dark px-4 py-2">
+                                    <h5 class="fs-4 text-highlight">JULY 30, 2023</h5>
+                                    <div class="date-shape">
+                                        <div class="position-relative text-center">
+                                            <img class="img-fluid" src="img/event-card/date-shape.svg" alt="Side profile shot of the weekend against a red circle background">
+                                            <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">SUNDAY</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center ">
+                                    <a href="" class="btn btn-highlight w-100 h-100">Buy Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Event card 3: Dua Lipa -->
                 <div class="col mb-4">
-                    <div class="event-card shadow-lg">
-                        <img class="card-img-top" src="img/event-card/dua.png" alt="Dua Lipa singing in front of green screen" />
+                    <div id="gallery-card" class="event-card shadow-lg  ">
+                        <img class="card-img-top" src="img/event-card/dua.webp" alt="Dua Lipa singing in front of green screen" />
                         <div class="card-info-banner bg-dark px-4 py-2">
                             <h5 class="fs-4 text-highlight">August 12, 2023</h5>
                             <div class="date-shape">
@@ -190,11 +218,36 @@
                             <p class="card-text fs-3">Future Nostalgia</p>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="list-card" class="event-card shadow-lg">
+                                <div class="row align-items-center px-4 py-3">
+                                    <div class="col-5 col-lg-3"><img class="img-fluid rounded-2" src="img/event-card/dua.webp" alt="Title" /></div>
+                                    <div class="col-7">
+                                        <h4 class="card-title fs-3 text-uppercase">DUA LIPA</h4>
+                                        <p class="card-text fs-5">Future Nostalgia</p>
+                                    </div>
+                                </div>
+                                <div class="card-info-banner bg-dark px-4 py-2">
+                                    <h5 class="fs-4 text-highlight">August 12, 2023</h5>
+                                    <div class="date-shape">
+                                        <div class="position-relative text-center">
+                                            <img class="img-fluid" src="img/event-card/date-shape.svg" alt="Side profile shot of the weekend against a red circle background">
+                                            <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">SATURDAY</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center ">
+                                    <a href="" class="btn btn-highlight w-100 h-100">Buy Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Event card 4: Lady Gaga -->
                 <div class="col mb-4">
-                    <div class="event-card shadow-lg">
-                        <img class="card-img-top" src="img/event-card/lady-gaga.png" alt="Lady Gaga posing on blue background with long pink hair" />
+                    <div id="gallery-card" class="event-card shadow-lg  ">
+                        <img class="card-img-top" src="img/event-card/lady-gaga.webp" alt="Lady Gaga posing on blue background with long pink hair" />
                         <div class="card-info-banner bg-dark px-4 py-2">
                             <h5 class="fs-4 text-highlight">AUGUST 18, 2023</h5>
                             <div class="date-shape">
@@ -209,11 +262,36 @@
                             <p class="card-text fs-3">The Chromatica Ball</p>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="list-card" class="event-card shadow-lg">
+                                <div class="row align-items-center px-4 py-3">
+                                    <div class="col-5 col-lg-3"><img class="img-fluid rounded-2" src="img/event-card/dua.webp" alt="Title" /></div>
+                                    <div class="col-7">
+                                        <h4 class="card-title fs-3 text-uppercase">DUA LIPA</h4>
+                                        <p class="card-text fs-5">Future Nostalgia</p>
+                                    </div>
+                                </div>
+                                <div class="card-info-banner bg-dark px-4 py-2">
+                                    <h5 class="fs-4 text-highlight">August 12, 2023</h5>
+                                    <div class="date-shape">
+                                        <div class="position-relative text-center">
+                                            <img class="img-fluid" src="img/event-card/date-shape.svg" alt="Side profile shot of the weekend against a red circle background">
+                                            <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">SATURDAY</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center ">
+                                    <a href="" class="btn btn-highlight w-100 h-100">Buy Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Event card 5: Harry Styles -->
                 <div class="col mb-4">
-                    <div class="event-card shadow-lg">
-                        <img class="card-img-top" src="img/event-card/harry-style.png" alt="Harry Styles posing in a sweater" />
+                    <div id="gallery-card" class="event-card shadow-lg  ">
+                        <img class="card-img-top" src="img/event-card/harry-style copy.webp" alt="Harry Styles posing in a sweater" />
                         <div class="card-info-banner bg-dark px-4 py-2">
                             <h5 class="fs-4 text-highlight">AUGUST 29, 2023</h5>
                             <div class="date-shape">
@@ -228,11 +306,36 @@
                             <p class="card-text fs-3">Love On Tour</p>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="list-card" class="event-card shadow-lg">
+                                <div class="row align-items-center px-4 py-3">
+                                    <div class="col-5 col-lg-3"><img class="img-fluid rounded-2" src="img/event-card/harry-style copy.webp" alt="Title" /></div>
+                                    <div class="col-7">
+                                        <h4 class="card-title fs-3 text-uppercase">HARRY STYLES</h4>
+                                        <p class="card-text fs-5">Love On Tour</p>
+                                    </div>
+                                </div>
+                                <div class="card-info-banner bg-dark px-4 py-2">
+                                    <h5 class="fs-4 text-highlight">AUGUST 29, 2023</h5>
+                                    <div class="date-shape">
+                                        <div class="position-relative text-center">
+                                            <img class="img-fluid" src="img/event-card/date-shape.svg" alt="Side profile shot of the weekend against a red circle background">
+                                            <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">TUESDAY</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center ">
+                                    <a href="" class="btn btn-highlight w-100 h-100">Buy Tickets</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Event card 6: Taylor Swift -->
                 <div class="col mb-4">
-                    <div class="event-card shadow-lg">
-                        <img class="card-img-top" src="img/event-card/t-swift.png" alt="Taylor Swift standing at her performance with smoke in the background" />
+                    <div id="gallery-card" class="event-card shadow-lg  ">
+                        <img class="card-img-top" src="img/event-card/t-swift.webp" alt="Taylor Swift standing at her performance with smoke in the background" />
                         <div class="card-info-banner bg-dark px-4 py-2">
                             <h5 class="fs-4 text-highlight">SEPTEMBER 01, 2023</h5>
                             <div class="date-shape">
@@ -245,6 +348,31 @@
                         <div class="card-body text-center py-5">
                             <h4 class="card-title fs-2 text-uppercase">TAYLOR SWIFT</h4>
                             <p class="card-text fs-3">Eras Tour</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="list-card" class="event-card shadow-lg">
+                                <div class="row align-items-center px-4 py-3">
+                                    <div class="col-5 col-lg-3"><img class="img-fluid rounded-2" src="img/event-card/the-weeknd.webp" alt="Title" /></div>
+                                    <div class="col-7">
+                                        <h4 class="card-title fs-3 text-uppercase">The Weeknd</h4>
+                                        <p class="card-text fs-5">After Hours Tour</p>
+                                    </div>
+                                </div>
+                                <div class="card-info-banner bg-dark px-4 py-2">
+                                    <h5 class="fs-4 text-highlight">JULY 28, 2023</h5>
+                                    <div class="date-shape">
+                                        <div class="position-relative text-center">
+                                            <img class="img-fluid" src="img/event-card/date-shape.svg" alt="Side profile shot of the weekend against a red circle background">
+                                            <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">Friday</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center ">
+                                    <a href="" class="btn btn-highlight w-100 h-100">Buy Tickets</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -363,16 +491,16 @@
                             </div>
                             <div class="tab-pane fade" id="tab2-pane" role="tabpanel" aria-labelledby="tab2-button" tabindex="0">
                                 <div class="px-4">
-                                    <div class="embed-responsive embed-responsive-1by1">
+                                    <!-- <div class="embed-responsive embed-responsive-1by1">
                                         <iframe class="embed-responsive-item" src="https://www.instagram.com/axsevents/embed" allowfullscreen></iframe>
                                     </div>
-                                    <script async src="//www.instagram.com/embed.js"></script>
+                                    <script async src="//www.instagram.com/embed.js"></script> -->
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tab3-pane" role="tabpanel" aria-labelledby="tab3-button" tabindex="0">
                                 <div class="px-4">
                                     <div class="embed-responsive embed-responsive-4by3">
-                                        <iframe class="embed-responsive-item" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faxs%2Fposts%2Fpfbid02RruG9tSzXvcJUxMXDcAiZw9EYnWmifyQkXMgbWknHwVU3me1UkaMwS15ysYeZBC1l&show_text=true&width=500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                        <!-- <iframe class="embed-responsive-item" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faxs%2Fposts%2Fpfbid02RruG9tSzXvcJUxMXDcAiZw9EYnWmifyQkXMgbWknHwVU3me1UkaMwS15ysYeZBC1l&show_text=true&width=500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> -->
                                     </div>
                                 </div>
                             </div>
