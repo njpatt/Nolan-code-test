@@ -20,6 +20,10 @@ $headings-font-weight: 700;
 $enable-shadows: true !default;
 $enable-responsive-font-sizes: true;
 
+$primary-font: "Oswald", sans-serif;
+$secondary-font: "Merriweather", serif;
+$tertiary-font: "Lato", sans-serif;
+
 // scss-docs-start position-map
 $position-values: (
   0: 0,

@@ -87,5 +87,6 @@
 }
 // To set the height of the social card equal to the height of the other card
 .social-card {
-  height: 400px !important;
+  min-height: 400px !important;
+  border-radius: 5px !important;
 }

@@ -73,44 +73,6 @@ const utl_ehElements = () => {
 utl_ehElements();
 
 document.addEventListener("DOMContentLoaded", function () {
-  const gridViewBtn = document.getElementById("grid-view-btn");
-  const listViewBtn = document.getElementById("list-view-btn");
-  const eventsContainer = document.getElementById("events-container");
-
-  // Grid View (Default)
-  gridViewBtn.addEventListener("click", function () {
-    eventsContainer.classList.remove("list-view");
-    eventsContainer.classList.add(
-      "row-cols-1",
-      "row-cols-md-2",
-      "row-cols-xl-3"
-    );
-
-    // Update active button state
-    gridViewBtn.classList.add("active");
-    listViewBtn.classList.remove("active");
-
-    // Reset all cards to grid style
-    document.querySelectorAll(".event-card").forEach((card) => {
-      card.classList.remove("list-card");
-    });
-  });
-
-  // List View
-  listViewBtn.addEventListener("click", function () {
-    eventsContainer.classList.remove("row-cols-md-2", "row-cols-xl-3");
-    eventsContainer.classList.add("list-view");
-
-    // Update active button state
-    listViewBtn.classList.add("active");
-    gridViewBtn.classList.remove("active");
-
-    // Convert all cards to list style
-    document.querySelectorAll(".event-card").forEach((card) => {
-      card.classList.add("list-card");
-    });
-  });
-
   // Glide.js Slider configuration - 2.5 slides shown on xxl screens..etc
   const config = {
     type: "carousel",

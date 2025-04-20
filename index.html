@@ -12,10 +12,10 @@
 
 <body>
     <!-- Navbar -->
-    <div class="top-nav position-relative d-none d-md-block ">
-        <div class="container-fluid">
+    <div class="top-nav  sticky-top  bg-white">
+        <div class="container-fluid  d-none d-md-block ">
             <div class="row justify-content-end align-items-center h-100 ">
-                <div class="col d-flex align-items-center justify-content-end py-4">
+                <div class="col d-flex align-items-center justify-content-end py-2">
                     <h4 class="text-primary m-0">GET CONNECTED</h4>
                     <div class="mx-3">
                         <img src="img/icons/instagram.svg" alt="Instagram Logo ">
@@ -40,33 +40,52 @@
         <div class="position-absolute end-0 top-0 h-100 d-flex align-items-center justify-content-end">
             <a class="btn btn-primary px-4">Login</a>
         </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary  ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/ch-venue-logo.svg" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto justify-content-evenly">
-                    <li class="nav-item text-center mx-xxl2-5 mx-2">
-                        <a class="nav-link active" href="#">TICKETS</a>
-                    </li>
-                    <li class="nav-item text-center mx-xxl2-5 mx-2">
-                        <a class="nav-link" href="#">PLAN YOUR VISITS</a>
-                    </li>
-                    <li class="nav-item text-center mx-xxl2-5 mx-2">
-                        <a class="nav-link" href="#">VIP MEMBERS</a>
-                    </li>
-                    <li class="nav-item text-center mx-xxl2-5 mx-2">
-                        <a class="nav-link" href="#">ABOUT US</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="scroll-logo">
+                    <img src="img/ch-venue-logo.svg" alt="">
+                </a>
+                <style>
+                    #scroll-logo {
+                        transition: transform 0.3s ease-in-out;
+                    }
+
+                    .scrolled #scroll-logo {
+                        transform: translateY(-2rem);
+                    }
+                </style>
+                <script>
+                    document.addEventListener("scroll", function () {
+                        const navbar = document.querySelector(".navbar");
+                        if (window.scrollY > 0) {
+                            navbar.classList.add("scrolled");
+                        } else {
+                            navbar.classList.remove("scrolled");
+                        }
+                    });
+                </script>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto justify-content-evenly">
+                        <li class="nav-item text-center mx-xxl2-5 mx-2">
+                            <a class="nav-link active" href="#">TICKETS</a>
+                        </li>
+                        <li class="nav-item text-center mx-xxl2-5 mx-2">
+                            <a class="nav-link" href="#">PLAN YOUR VISITS</a>
+                        </li>
+                        <li class="nav-item text-center mx-xxl2-5 mx-2">
+                            <a class="nav-link" href="#">VIP MEMBERS</a>
+                        </li>
+                        <li class="nav-item text-center mx-xxl2-5 mx-2">
+                            <a class="nav-link" href="#">ABOUT US</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <!-- Upcoming Events -->
     <section id="upcoming-events">
         <div class="container-fluid">
@@ -239,7 +258,7 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-10 text-center p-4">
                     <div class="newsletter-box p-5">
-                        <h2 class="text-white display-3">NEWSLETTER SIGNUP</h2>
+                        <h2 class="display-4 fw-bold text-uppercase text-white">NEWSLETTER SIGNUP</h2>
                         <p class="text-white fs-4">Stay updated on the best concerts and most hip events!</p>
                         <a class="btn btn-primary BTN-LG z-2 w-50" href="#">GET CONNECTED</a>
                     </div>
@@ -250,11 +269,11 @@
     <!-- Social Contact Section -->
     <section id="social-contact">
         <div class="container-fluid">
-            <div class="row ">
-                <div class="col-xl-5 ">
-                    <h2 class="display-3">GET SOCIAL</h2>
-                    <p class="fs-3">Stay Connected Wherever You Are!</p>
-                    <div class="card shadow-lg mt-4 ">
+            <div class="row gx-5">
+                <div class="col-xl-6 ">
+                    <h2 class="display-4 fw-bold text-uppercase">GET SOCIAL</h2>
+                    <p class="fs-3 mt-n4">Stay Connected Wherever You Are!</p>
+                    <div class="card social-card shadow-lg mt-4 ">
                         <ul class="nav nav-pills nav-justified " id="tabButtons" role="tablist">
                             <li class="nav-item z-3" role="presentation">
                                 <button class="nav-link social-tab active " id="tab1-button" data-bs-toggle="tab" data-bs-target="#tab1-pane" type="button" role="tab" aria-controls="tab1-pane" aria-selected="true">
@@ -344,21 +363,26 @@
                             </div>
                             <div class="tab-pane fade" id="tab2-pane" role="tabpanel" aria-labelledby="tab2-button" tabindex="0">
                                 <div class="px-4">
-                                    <p>COMING SOON!</p>
+                                    <div class="embed-responsive embed-responsive-1by1">
+                                        <iframe class="embed-responsive-item" src="https://www.instagram.com/axsevents/embed" allowfullscreen></iframe>
+                                    </div>
+                                    <script async src="//www.instagram.com/embed.js"></script>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tab3-pane" role="tabpanel" aria-labelledby="tab3-button" tabindex="0">
                                 <div class="px-4">
-                                    <p>COMING SOON!</p>
+                                    <div class="embed-responsive embed-responsive-4by3">
+                                        <iframe class="embed-responsive-item" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faxs%2Fposts%2Fpfbid02RruG9tSzXvcJUxMXDcAiZw9EYnWmifyQkXMgbWknHwVU3me1UkaMwS15ysYeZBC1l&show_text=true&width=500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-5 offset-xl-1 ">
-                    <h2 class="display-3">GET DIRECTIONS</h2>
-                    <p class="fs-3">Map Out Your Trip</p>
-                    <div class="card shadow-lg mt-4  ">
+                <div class="col-xl-6 ">
+                    <h2 class="display-4 fw-bold text-uppercase ">GET DIRECTIONS</h2>
+                    <p class="fs-3  mt-n4">Map Out Your Trip</p>
+                    <div class="card social-card  shadow-lg mt-4  ">
                         <div class="card-header bg-highlight">
                             <h4>ADDRESS: 5727 WESTPARK DRIVE. 108, CHARLOTTE, NC 28217</h4>
                         </div>
@@ -375,9 +399,6 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script>
-
-    </script>
 </body>
 
 </html>

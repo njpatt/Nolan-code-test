@@ -11,6 +11,8 @@
 @import "layout";
 @import "utilities-map";
 @import "mixins";
+@import "fonts";
+@import "typography";
 
 // Additional custom styles
 .hero {
@@ -19,26 +21,5 @@
 
   h1 {
     margin-bottom: 1.5rem;
-  }
-}
-
-.features {
-  .card {
-    transition: transform 0.3s ease;
-
-    &:hover {
-      transform: translateY(-10px);
-    }
-  }
-}
-
-.footer {
-  a {
-    color: $gray-400;
-    text-decoration: none;
-
-    &:hover {
-      color: white;
-    }
   }
 }
