@@ -30,8 +30,8 @@
     font-weight: 700;
 
     &:hover {
-      background-color: darken($white, 10%);
-      border-color: darken($primary, 10%);
+      background-color: $highlight;
+      border-color: $white;
     }
   }
   &.btn-highlight {
@@ -59,27 +59,31 @@
       border-color: darken($secondary, 10%);
     }
   }
-}
-
-.login-btn {
-  padding: 0.5rem 1.5rem;
-  color: $primary;
-  font-family: $primary-font !important;
-  font-weight: 500;
-  @include media-breakpoint-up(lg) {
-    height: 68px;
-    position: absolute;
-    top: -68px !important;
-    right: 0 !important;
-  }
-
-  background-color: $highlight;
-  border-color: $highlight;
-  color: $primary;
-
-  &:hover {
+  &.login-btn {
     color: $primary;
-    background-color: $white;
-    border-color: darken($primary, 10%);
+    font-family: $primary-font !important;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0;
+    @include media-breakpoint-up(lg) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 68px;
+      width: 100px;
+    }
+
+    background-color: $highlight;
+    border-color: $highlight;
+    color: $primary;
+
+    &:hover {
+      color: $primary;
+      background-color: $white;
+      border-color: darken($primary, 10%);
+    }
   }
 }

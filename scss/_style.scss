@@ -2,6 +2,7 @@
   position: relative;
   .event-border {
     border-bottom: 2px solid $primary;
+    margin-bottom: 1rem;
   }
 }
 
@@ -47,9 +48,9 @@
 }
 #social-contact {
   position: relative;
-  @include media-breakpoint-up(lg) {
-    min-height: 830px;
-  }
+  // @include media-breakpoint-up(lg) {
+  //   min-height: 830px;
+  // }
   // Social carousel buttons, hidden on mobile
   .carousel-control-prev,
   .carousel-control-next {
@@ -97,36 +98,6 @@
     &:active {
       background-color: $white;
       color: $primary;
-    }
-  }
-}
-
-.custom-footer {
-  background-color: #111; // dark theme (like Twitter)
-  padding: 0.5rem 1rem;
-  border-radius: 0 0 0.5rem 0.5rem; // rounded bottom
-  font-size: 0.9rem;
-
-  h4 {
-    font-weight: 500;
-    font-size: 0.875rem;
-  }
-
-  .twitter-icons {
-    width: 18px;
-    height: 18px;
-    filter: brightness(0) invert(1); // ensures white icons if they're black by default
-    transition: opacity 0.2s ease;
-  }
-
-  .icon-link:hover .twitter-icons {
-    opacity: 0.7;
-  }
-
-  @media (max-width: 576px) {
-    flex-direction: column;
-    h4 {
-      margin-bottom: 0.5rem;
     }
   }
 }
