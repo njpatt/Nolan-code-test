@@ -1,5 +1,12 @@
+#upcoming-events {
+  position: relative;
+  .event-border {
+    border-bottom: 2px solid $primary;
+  }
+}
+
 #newsletter {
-  background-image: url("../img/newsletter-bg.png");
+  background-image: url("../img/newsletter-bg-copy.webp");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -23,11 +30,19 @@
   .newsletter-box {
     position: relative;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.7);
-    // padding: 12rem;
-    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 6rem 2.5rem;
+    border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 1.5rem;
+
+    @include media-breakpoint-up(md) {
+      padding: 3rem;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 6rem;
+      border-radius: 25px;
+    }
   }
 }
 #social-contact {
@@ -85,6 +100,37 @@
     }
   }
 }
+
+.custom-footer {
+  background-color: #111; // dark theme (like Twitter)
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 0.5rem 0.5rem; // rounded bottom
+  font-size: 0.9rem;
+
+  h4 {
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+
+  .twitter-icons {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1); // ensures white icons if they're black by default
+    transition: opacity 0.2s ease;
+  }
+
+  .icon-link:hover .twitter-icons {
+    opacity: 0.7;
+  }
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    h4 {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
 // To set the height of the social card equal to the height of the other card
 .social-card {
   min-height: 400px !important;
