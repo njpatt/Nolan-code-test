@@ -18,70 +18,75 @@
                 <div class="col d-flex align-items-center justify-content-end py-3">
                     <h4 class="text-primary m-0">GET CONNECTED</h4>
                     <div class="mx-3">
-                        <img src="img/icons/instagram.svg" alt="Instagram Logo ">
+                        <a href=""><img src="img/icons/instagram.svg" alt="Instagram Logo "></a>
                     </div>
                     <div class="mx-3">
-                        <img src="img/icons/twitter.svg" alt="Twitter Logo (old)">
+                        <a href=""><img src="img/icons/twitter.svg" alt="Twitter Logo (old)"></a>
                     </div>
                     <div class="mx-3">
-                        <img src="img/icons/facebook.svg" alt="Facebook Logo">
+                        <a href=""><img src="img/icons/facebook.svg" alt="Facebook Logo"></a>
                     </div>
                     <div class="mx-3">
-                        <img src="img/icons/twitter.svg" alt="">
+                        <a href=""><img src="img/icons/twitter.svg" alt=""></a>
                     </div>
                     <div class="mx-3 w-25 ">
                         <input type="text" class="form-control rounded-pill bg-light border-0 px-4" placeholder="SEARCH EVENTS">
                     </div>
                     <div class="mx-3">
                     </div>
-                    <div class="position-absolute w-20">
-                        <a class="btn btn-highlight d-flex align-items-center justify-content-center h-100">Login</a>
-                    </div>
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary position-relative">
+            <div class=" d-none d-lg-block">
+                <a class="btn login-btn   h-100">Login</a>
+            </div>
             <div class="container-fluid">
                 <a class="navbar-brand" href="#" id="scroll-logo">
                     <img src="img/ch-venue-logo.svg" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon text-white"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto justify-content-evenly">
-                        <li class="nav-item text-center mx-xxl2-5 mx-2">
+                    <ul class="navbar-nav mx-auto ">
+                        <li class="nav-item text-lg-center mx-xxl2-5 mx-2">
                             <a class="nav-link active" href="#">TICKETS</a>
                         </li>
-                        <li class="nav-item text-center mx-xxl2-5 mx-2">
+                        <li class="nav-item text-lg-center mx-xxl2-5 mx-2">
                             <a class="nav-link" href="#">PLAN YOUR VISITS</a>
                         </li>
-                        <li class="nav-item text-center mx-xxl2-5 mx-2">
+                        <li class="nav-item text-lg-center mx-xxl2-5 mx-2">
                             <a class="nav-link" href="#">VIP MEMBERS</a>
                         </li>
-                        <li class="nav-item text-center mx-xxl2-5 mx-2">
+                        <li class="nav-item text-lg-center mx-xxl2-5 mx-2">
                             <a class="nav-link" href="#">ABOUT US</a>
                         </li>
                     </ul>
                     <div class="row justify-content-center align-items-center h-100 d-lg-none d-block ">
-                        <div class="col d-flex align-items-center justify-content-end py-3">
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <div class="mx-3 w-75 my-2">
+                                    <input type="text" class="form-control rounded-pill bg-light border-0 px-4" placeholder="SEARCH EVENTS">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-start py-3">
                             <h4 class="text-primary m-0 text-white">GET CONNECTED</h4>
                             <div class="mx-3">
-                                <img src="img/icons/instagram.svg" alt="Instagram Logo ">
+                                <a href=""><img src="img/icons/instagram.svg" alt="Instagram Logo "></a>
                             </div>
                             <div class="mx-3">
-                                <img src="img/icons/twitter.svg" alt="Twitter Logo (old)">
+                                <a href=""><img src="img/icons/twitter-white.svg" alt="Twitter Logo (old)"></a>
                             </div>
                             <div class="mx-3">
-                                <img src="img/icons/facebook.svg" alt="Facebook Logo">
+                                <a href=""><img src="img/icons/facebook.svg" alt="Facebook Logo"></a>
                             </div>
                             <div class="mx-3">
-                                <img src="img/icons/twitter.svg" alt="">
+                                <a href=""><img src="img/icons/twitter.svg" alt=""></a>
                             </div>
-                            <div class="mx-3 w-25 ">
-                                <input type="text" class="form-control rounded-pill bg-light border-0 px-4" placeholder="SEARCH EVENTS">
-                            </div>
-                            <div class="mx-3">
+                            <div class=" d-lg-none d-block">
+                                <a class=" btn login-btn  h-100">Login</a>
                             </div>
                         </div>
                     </div>
@@ -107,21 +112,19 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-lg-12">
-                    <hr class="bg-primary p-1 opacity-100">
-                </div>
+                <div class="event-border "></div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 gx-5 justify-content-center" id="events-container">
                 <!-- Event card 1: The Weeknd -->
                 <div class="col mb-4">
                     <div id="gallery-card" class="event-card shadow-lg ">
                         <img class="card-img-top" src="img/event-card/the-weeknd.webp" alt="Title" />
-                        <div class="card-info-banner bg-dark px-4 py-2">
-                            <h5 class="fs-4 text-highlight">JULY 28, 2023</h5>
+                        <div class="card-info-banner bg-dark px-4 py-1 py-lg-2 ">
+                            <h5 class="fs-5 text-highlight date-text lead ">JULY 28, 2023</h5>
                             <div class="date-shape">
                                 <div class="position-relative text-center">
                                     <img class="img-fluid" src="img/event-card/date-shape.svg" alt="Side profile shot of the weekend against a red circle background">
-                                    <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">Friday</h4>
+                                    <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary ">Friday</h4>
                                 </div>
                             </div>
                         </div>
@@ -140,17 +143,17 @@
                                         <p class="card-text fs-5">After Hours Tour</p>
                                     </div>
                                 </div>
-                                <div class="card-info-banner bg-dark px-4 py-2">
-                                    <h5 class="fs-4 text-highlight">JULY 28, 2023</h5>
+                                <div class="card-info-banner bg-dark px-4 py-1 py-lg-2 ">
+                                    <h5 class="fs-5 text-highlight date-text lead ">JULY 28, 2023</h5>
                                     <div class="date-shape">
                                         <div class="position-relative text-center">
                                             <img class="img-fluid" src="img/event-card/date-shape.svg" alt="Side profile shot of the weekend against a red circle background">
-                                            <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">Friday</h4>
+                                            <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary ">Friday</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-body text-center ">
-                                    <a href="" class="btn btn-highlight w-100 h-100">Buy Tickets</a>
+                                    <a href="" class="btn btn-highlight w-100 h-100 py-4">Buy Tickets</a>
                                 </div>
                             </div>
                         </div>
@@ -160,12 +163,12 @@
                 <div class="col mb-4">
                     <div id="gallery-card" class="event-card shadow-lg  ">
                         <img class="card-img-top" src="img/event-card/bts.webp" alt="BTS band shot sitting on blue couch" />
-                        <div class="card-info-banner bg-dark px-4 py-2">
-                            <h5 class="fs-4 text-highlight">JULY 30, 2023</h5>
+                        <div class="card-info-banner bg-dark px-4 py-1 py-lg-2 ">
+                            <h5 class="fs-5 text-highlight date-text lead ">JULY 30, 2023</h5>
                             <div class="date-shape">
                                 <div class="position-relative text-center">
                                     <img class="img-fluid" src="img/event-card/date-shape.svg" alt="BTS band shot sitting on blue couch">
-                                    <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">SUNDAY</h4>
+                                    <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary ">SUNDAY</h4>
                                 </div>
                             </div>
                         </div>
@@ -184,17 +187,17 @@
                                         <p class="card-text fs-5">Map Of The Soul Tour</p>
                                     </div>
                                 </div>
-                                <div class="card-info-banner bg-dark px-4 py-2">
-                                    <h5 class="fs-4 text-highlight">JULY 30, 2023</h5>
+                                <div class="card-info-banner bg-dark px-4 py-1 py-lg-2 ">
+                                    <h5 class="fs-5 text-highlight date-text lead ">JULY 30, 2023</h5>
                                     <div class="date-shape">
                                         <div class="position-relative text-center">
                                             <img class="img-fluid" src="img/event-card/date-shape.svg" alt="Side profile shot of the weekend against a red circle background">
-                                            <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">SUNDAY</h4>
+                                            <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary ">SUNDAY</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-body text-center ">
-                                    <a href="" class="btn btn-highlight w-100 h-100">Buy Tickets</a>
+                                    <a href="" class="btn btn-highlight w-100 h-100 py-4">Buy Tickets</a>
                                 </div>
                             </div>
                         </div>
@@ -204,12 +207,12 @@
                 <div class="col mb-4">
                     <div id="gallery-card" class="event-card shadow-lg  ">
                         <img class="card-img-top" src="img/event-card/dua.webp" alt="Dua Lipa singing in front of green screen" />
-                        <div class="card-info-banner bg-dark px-4 py-2">
-                            <h5 class="fs-4 text-highlight">August 12, 2023</h5>
+                        <div class="card-info-banner bg-dark px-4 py-1 py-lg-2 ">
+                            <h5 class="fs-5 text-highlight date-text lead ">August 12, 2023</h5>
                             <div class="date-shape">
                                 <div class="position-relative text-center">
                                     <img class="img-fluid" src="img/event-card/date-shape.svg" alt="">
-                                    <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">SATURDAY</h4>
+                                    <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary ">SATURDAY</h4>
                                 </div>
                             </div>
                         </div>
@@ -228,17 +231,17 @@
                                         <p class="card-text fs-5">Future Nostalgia</p>
                                     </div>
                                 </div>
-                                <div class="card-info-banner bg-dark px-4 py-2">
-                                    <h5 class="fs-4 text-highlight">August 12, 2023</h5>
+                                <div class="card-info-banner bg-dark px-4 py-1 py-lg-2 ">
+                                    <h5 class="fs-5 text-highlight date-text lead ">August 12, 2023</h5>
                                     <div class="date-shape">
                                         <div class="position-relative text-center">
                                             <img class="img-fluid" src="img/event-card/date-shape.svg" alt="Side profile shot of the weekend against a red circle background">
-                                            <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">SATURDAY</h4>
+                                            <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary ">SATURDAY</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-body text-center ">
-                                    <a href="" class="btn btn-highlight w-100 h-100">Buy Tickets</a>
+                                    <a href="" class="btn btn-highlight w-100 h-100 py-4">Buy Tickets</a>
                                 </div>
                             </div>
                         </div>
@@ -248,12 +251,12 @@
                 <div class="col mb-4">
                     <div id="gallery-card" class="event-card shadow-lg  ">
                         <img class="card-img-top" src="img/event-card/lady-gaga.webp" alt="Lady Gaga posing on blue background with long pink hair" />
-                        <div class="card-info-banner bg-dark px-4 py-2">
-                            <h5 class="fs-4 text-highlight">AUGUST 18, 2023</h5>
+                        <div class="card-info-banner bg-dark px-4 py-1 py-lg-2 ">
+                            <h5 class="fs-5 text-highlight date-text lead ">AUGUST 18, 2023</h5>
                             <div class="date-shape">
                                 <div class="position-relative text-center">
                                     <img class="img-fluid" src="img/event-card/date-shape.svg" alt="">
-                                    <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">FRIDAY</h4>
+                                    <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary ">FRIDAY</h4>
                                 </div>
                             </div>
                         </div>
@@ -272,17 +275,17 @@
                                         <p class="card-text fs-5">Future Nostalgia</p>
                                     </div>
                                 </div>
-                                <div class="card-info-banner bg-dark px-4 py-2">
-                                    <h5 class="fs-4 text-highlight">August 12, 2023</h5>
+                                <div class="card-info-banner bg-dark px-4 py-1 py-lg-2 ">
+                                    <h5 class="fs-5 text-highlight date-text lead ">August 12, 2023</h5>
                                     <div class="date-shape">
                                         <div class="position-relative text-center">
                                             <img class="img-fluid" src="img/event-card/date-shape.svg" alt="Side profile shot of the weekend against a red circle background">
-                                            <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">SATURDAY</h4>
+                                            <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary ">SATURDAY</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-body text-center ">
-                                    <a href="" class="btn btn-highlight w-100 h-100">Buy Tickets</a>
+                                    <a href="" class="btn btn-highlight w-100 h-100 py-4">Buy Tickets</a>
                                 </div>
                             </div>
                         </div>
@@ -292,12 +295,12 @@
                 <div class="col mb-4">
                     <div id="gallery-card" class="event-card shadow-lg  ">
                         <img class="card-img-top" src="img/event-card/harry-style copy.webp" alt="Harry Styles posing in a sweater" />
-                        <div class="card-info-banner bg-dark px-4 py-2">
-                            <h5 class="fs-4 text-highlight">AUGUST 29, 2023</h5>
+                        <div class="card-info-banner bg-dark px-4 py-1 py-lg-2 ">
+                            <h5 class="fs-5 text-highlight date-text lead ">AUGUST 29, 2023</h5>
                             <div class="date-shape">
                                 <div class="position-relative text-center">
                                     <img class="img-fluid" src="img/event-card/date-shape.svg" alt="">
-                                    <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">TUESDAY</h4>
+                                    <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary ">TUESDAY</h4>
                                 </div>
                             </div>
                         </div>
@@ -316,17 +319,17 @@
                                         <p class="card-text fs-5">Love On Tour</p>
                                     </div>
                                 </div>
-                                <div class="card-info-banner bg-dark px-4 py-2">
-                                    <h5 class="fs-4 text-highlight">AUGUST 29, 2023</h5>
+                                <div class="card-info-banner bg-dark px-4 py-1 py-lg-2 ">
+                                    <h5 class="fs-5 text-highlight date-text lead ">AUGUST 29, 2023</h5>
                                     <div class="date-shape">
                                         <div class="position-relative text-center">
                                             <img class="img-fluid" src="img/event-card/date-shape.svg" alt="Side profile shot of the weekend against a red circle background">
-                                            <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">TUESDAY</h4>
+                                            <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary ">TUESDAY</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-body text-center ">
-                                    <a href="" class="btn btn-highlight w-100 h-100">Buy Tickets</a>
+                                    <a href="" class="btn btn-highlight w-100 h-100 py-4">Buy Tickets</a>
                                 </div>
                             </div>
                         </div>
@@ -336,12 +339,12 @@
                 <div class="col mb-4">
                     <div id="gallery-card" class="event-card shadow-lg  ">
                         <img class="card-img-top" src="img/event-card/t-swift.webp" alt="Taylor Swift standing at her performance with smoke in the background" />
-                        <div class="card-info-banner bg-dark px-4 py-2">
-                            <h5 class="fs-4 text-highlight">SEPTEMBER 01, 2023</h5>
+                        <div class="card-info-banner bg-dark px-4 py-1 py-lg-2 ">
+                            <h5 class="fs-5 text-highlight date-text lead ">SEPTEMBER 01, 2023</h5>
                             <div class="date-shape">
                                 <div class="position-relative text-center">
                                     <img class="img-fluid" src="img/event-card/date-shape.svg" alt="">
-                                    <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">FRIDAY</h4>
+                                    <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary ">FRIDAY</h4>
                                 </div>
                             </div>
                         </div>
@@ -360,17 +363,17 @@
                                         <p class="card-text fs-5">After Hours Tour</p>
                                     </div>
                                 </div>
-                                <div class="card-info-banner bg-dark px-4 py-2">
-                                    <h5 class="fs-4 text-highlight">JULY 28, 2023</h5>
+                                <div class="card-info-banner bg-dark px-4 py-1 py-lg-2 ">
+                                    <h5 class="fs-5 text-highlight date-text lead ">JULY 28, 2023</h5>
                                     <div class="date-shape">
                                         <div class="position-relative text-center">
                                             <img class="img-fluid" src="img/event-card/date-shape.svg" alt="Side profile shot of the weekend against a red circle background">
-                                            <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary">Friday</h4>
+                                            <h4 class="fs-4 position-absolute top-50 start-50 translate-middle text-primary ">Friday</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="card-body text-center ">
-                                    <a href="" class="btn btn-highlight w-100 h-100">Buy Tickets</a>
+                                    <a href="" class="btn btn-highlight w-100 h-100 py-4">Buy Tickets</a>
                                 </div>
                             </div>
                         </div>
@@ -384,11 +387,11 @@
     <section id="newsletter">
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <div class="col-lg-10 text-center p-4">
-                    <div class="newsletter-box p-5">
+                <div class="col-lg-8 text-center ">
+                    <div class="newsletter-box">
                         <h2 class="display-4 fw-bold text-uppercase text-white">NEWSLETTER SIGNUP</h2>
-                        <p class="text-white fs-4">Stay updated on the best concerts and most hip events!</p>
-                        <a class="btn btn-primary BTN-LG z-2 w-50" href="#">GET CONNECTED</a>
+                        <p class="text-white fs-4">Stay updated on the best concerts <br class="d-none d-sm-block"> and most hip events!</p>
+                        <a class="btn btn-primary-outline btn-lg z-2 w-auto" href="#">GET CONNECTED</a>
                     </div>
                 </div>
             </div>
@@ -404,15 +407,15 @@
                     <div class="card social-card shadow-lg mt-4 ">
                         <ul class="nav nav-pills nav-justified " id="tabButtons" role="tablist">
                             <li class="nav-item z-3" role="presentation">
-                                <button class="nav-link social-tab active " id="tab1-button" data-bs-toggle="tab" data-bs-target="#tab1-pane" type="button" role="tab" aria-controls="tab1-pane" aria-selected="true">
-                                    <img src="img/icons/twitter.svg" alt=""> <span class="h4 d-none d-md-block"> TWITTER</span>
+                                <button class="nav-link social-tab py-4 active " id="tab1-button" data-bs-toggle="tab" data-bs-target="#tab1-pane" type="button" role="tab" aria-controls="tab1-pane" aria-selected="true">
+                                    <img class="tab-icon " src="img/icons/twitter.svg" alt=""> <span class="h4 d-none d-md-block "> TWITTER</span>
                                 </button>
                             </li>
                             <li class="nav-item z-3" role="presentation">
-                                <button class="nav-link social-tab" id="tab2-button" data-bs-toggle="tab" data-bs-target="#tab2-pane" type="button" role="tab" aria-controls="tab2-pane" aria-selected="false"> <img src="img/icons/instagram.svg" alt=""> <span class="h4 d-none d-md-block"> INSTAGRAM</span></button>
+                                <button class="nav-link social-tab py-4" id="tab2-button" data-bs-toggle="tab" data-bs-target="#tab2-pane" type="button" role="tab" aria-controls="tab2-pane" aria-selected="false"> <img class="tab-icon" src="img/icons/instagram.svg" alt=""> <span class="h4 d-none d-md-block "> INSTAGRAM</span></button>
                             </li>
                             <li class="nav-item z-3" role="presentation">
-                                <button class="nav-link social-tab" id="tab3-button" data-bs-toggle="tab" data-bs-target="#tab3-pane" type="button" role="tab" aria-controls="tab3-pane" aria-selected="false"> <img src="img/icons/facebook.svg" alt=""> <span class="h4 d-none d-md-block"> FACEBOOK</span></button>`
+                                <button class="nav-link social-tab py-4" id="tab3-button" data-bs-toggle="tab" data-bs-target="#tab3-pane" type="button" role="tab" aria-controls="tab3-pane" aria-selected="false"> <img class="tab-icon" src="img/icons/facebook.svg" alt=""> <span class="h4 d-none d-md-block "> FACEBOOK</span></button>`
                             </li>
                         </ul>
                         <div class="tab-content mt-3" id="tabContent">
@@ -445,12 +448,23 @@
                                                                 <div class="card-body p-4">
                                                                     <div class="d-flex align-items-center my-4">
                                                                         <img src="img/icons/twitter.svg" alt="" class="me-2">
-                                                                        <h3 class="m-0">@ CHVENUE</h3>
+                                                                        <h4 class="m-0">@ CHVENUE</h4>
                                                                     </div>
                                                                     <p class="card-text">Catch unforgettable music moments at @acllive and @3TENaustin in Austin, TX. With over 130 concerts per year, discover world-renowned and local artists up close! #ACLLive #3TENACLLive</p>
                                                                 </div>
                                                                 <div class="card-footer bg-primary">
-                                                                    <h4 class="text-white mb-0">8:14 PM / 3 APR 2023</h4>
+                                                                    <div class=" d-flex">
+                                                                        <h4 class="text-white mb-0 fs-5">8:14 PM / 3 APR 2023</h4>
+                                                                        <div class="mx-2  ">
+                                                                            <a href=""><img class="twitter-icons" src="img/icons/comment.svg" alt="Comment Icon "></a>
+                                                                        </div>
+                                                                        <div class="mx-2  ">
+                                                                            <a href=""><img class="twitter-icons" src="img/icons/retweet.svg" alt="Retweet Icon"></a>
+                                                                        </div>
+                                                                        <div class=" mx-2  ">
+                                                                            <a href=""><img class="twitter-icons" src="img/icons/like.svg" alt="Like Icon"></a>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -459,12 +473,12 @@
                                                                 <div class="card-body p-4">
                                                                     <div class="d-flex align-items-center my-4">
                                                                         <img src="img/icons/twitter.svg" alt="" class="me-2">
-                                                                        <h3 class="m-0">@ CHVENUE</h3>
+                                                                        <h4 class="m-0">@ CHVENUE</h4>
                                                                     </div>
                                                                     <p class="card-text">Tickets for <a href="#" target="_blank">@Thundercat</a>'s In Yo Girl's City Tour go on sale tomorrow, 5/5 @ 10 am local time!! Get yours here <a href="http://go.axs.com/RzaC50OfofF">http://go.axs.com/RzaC50OfofF</a></p>
                                                                 </div>
                                                                 <div class="card-footer bg-primary">
-                                                                    <h4 class="text-white mb-0">8:14 PM / 3 APR 2023</h4>
+                                                                    <h4 class="text-white mb-0 fs-5">7:35 PM / 2 APR 2023</h4>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -473,12 +487,12 @@
                                                                 <div class="card-body p-4">
                                                                     <div class="d-flex align-items-center my-4">
                                                                         <img src="img/icons/twitter.svg" alt="" class="me-2">
-                                                                        <h3 class="m-0">@ CHVENUE</h3>
+                                                                        <h4 class="m-0">@ CHVENUE</h4>
                                                                     </div>
                                                                     <p class="card-text">Tickets for <a href="#" target="_blank">@derekhough</a>'s Symphony of Dance Tour go on sale this Friday, 4/28 @ 10 am local time!! Get yours here <a href="http://go.axs.com/Gzzi50NRXYl" target="_blank">http://go.axs.com/Gzzi50NRXYl</a></p>
                                                                 </div>
                                                                 <div class="card-footer bg-primary">
-                                                                    <h4 class="text-white mb-0">9:08 AM / 1 APR 2023</h4>
+                                                                    <h4 class="text-white mb-0 fs-5">9:08 AM / 1 APR 2023</h4>
                                                                 </div>
                                                             </div>
                                                         </li>
@@ -491,6 +505,7 @@
                             </div>
                             <div class="tab-pane fade" id="tab2-pane" role="tabpanel" aria-labelledby="tab2-button" tabindex="0">
                                 <div class="px-4">
+                                    <div class="h4 text-center">Coming Soon!</div>
                                     <!-- <div class="embed-responsive embed-responsive-1by1">
                                         <iframe class="embed-responsive-item" src="https://www.instagram.com/axsevents/embed" allowfullscreen></iframe>
                                     </div>
@@ -500,6 +515,7 @@
                             <div class="tab-pane fade" id="tab3-pane" role="tabpanel" aria-labelledby="tab3-button" tabindex="0">
                                 <div class="px-4">
                                     <div class="embed-responsive embed-responsive-4by3">
+                                        <div class="h4 text-center">Coming Soon!</div>
                                         <!-- <iframe class="embed-responsive-item" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Faxs%2Fposts%2Fpfbid02RruG9tSzXvcJUxMXDcAiZw9EYnWmifyQkXMgbWknHwVU3me1UkaMwS15ysYeZBC1l&show_text=true&width=500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> -->
                                     </div>
                                 </div>
@@ -511,8 +527,8 @@
                     <h2 class="display-4 fw-bold text-uppercase ">GET DIRECTIONS</h2>
                     <p class="fs-3  mt-n4">Map Out Your Trip</p>
                     <div class="card social-card  shadow-lg mt-4  ">
-                        <div class="card-header bg-highlight">
-                            <h4>ADDRESS: 5727 WESTPARK DRIVE. 108, CHARLOTTE, NC 28217</h4>
+                        <div class="card-header bg-highlight text-center ">
+                            <h4 class="mb-0 py-4">ADDRESS: 5727 WESTPARK DRIVE. 108, CHARLOTTE, NC 28217</h4>
                         </div>
                         <div class="card-body">
                             <div class="ratio ratio-1x1" style="max-height: 500px;"><iframe src="https://www.google.com/maps/d/embed?mid=1HaxC-W2Nu_Z5iVEKo0wXRDh8-irNepU&ehbc=2E312F&noprof=1"></iframe></div>

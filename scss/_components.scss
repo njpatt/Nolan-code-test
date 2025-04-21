@@ -1,14 +1,5 @@
 // Custom component styles
 
-// Buttons
-.btn {
-  padding: 0.5rem 1.5rem;
-
-  &.btn-lg {
-    padding: 0.75rem 2rem;
-  }
-}
-
 // Cards
 .card {
   border-radius: 8px;
@@ -39,15 +30,44 @@
 
   .card-info-banner {
     position: relative;
+    .date-text {
+      // @include media-breakpoint-down(sm) {
+      //   margin-bottom: 0 !important;
+      // }
 
+      margin-top: 1rem;
+    }
     .date-shape {
       position: absolute;
-      top: -30%;
+      top: -25%;
       right: 0;
 
+      @include media-breakpoint-up(xxl2) {
+        top: -30%;
+      }
+
       img {
+        @include media-breakpoint-down(sm) {
+          width: 10rem;
+        }
+
+        width: 10rem;
+
+        @include media-breakpoint-up(md) {
+          width: 10rem;
+        }
+        @include media-breakpoint-up(lg) {
+          width: 12rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+          width: 9rem;
+        }
         @include media-breakpoint-up(xxl) {
-          width: 8vw;
+          width: 14rem;
+        }
+        @include media-breakpoint-up(xxl2) {
+          width: 16rem;
         }
         height: auto;
       }
@@ -85,37 +105,5 @@
   transform: translateY(0px);
   @include media-breakpoint-up(lg) {
     transform: translateY(-35px);
-  }
-}
-
-.btn {
-  &.btn-primary {
-    background-color: $primary;
-    border-color: $primary;
-    color: $white;
-
-    &:hover {
-      background-color: darken($white, 10%);
-      border-color: darken($primary, 10%);
-    }
-  }
-  &.btn-highlight {
-    background-color: $highlight;
-    border-color: $highlight;
-
-    &:hover {
-      background-color: darken($primary, 10%);
-      border-color: darken($primary, 10%);
-    }
-  }
-
-  &.btn-secondary {
-    background-color: $secondary;
-    border-color: $secondary;
-
-    &:hover {
-      background-color: darken($secondary, 10%);
-      border-color: darken($secondary, 10%);
-    }
   }
 }

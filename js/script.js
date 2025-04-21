@@ -101,8 +101,19 @@ document.addEventListener("DOMContentLoaded", function () {
   // Get the main events container
   const eventsContainer = document.getElementById("events-container");
 
+  // Check if we're on a mobile device (md or smaller)
+  function isMobile() {
+    return window.innerWidth < 768; // 768px is the Bootstrap md breakpoint
+  }
+
   // Function to switch to grid view
   function showGridView() {
+    // Only apply grid view on larger screens
+    if (isMobile()) {
+      showListView();
+      return;
+    }
+
     // Update active button state
     gridViewBtn.classList.add("active");
     listViewBtn.classList.remove("active");
@@ -118,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Loop through all event cards
     document.querySelectorAll(".col.mb-4").forEach(function (col) {
       // Reset column width to default (part of the grid)
-      col.classList.remove("col-12", "col-lg-10");
+      col.classList.remove("col-12", "col-lg-8");
 
       // Show gallery cards
       const galleryCard = col.querySelector("#gallery-card");
@@ -148,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Loop through all event cards
     document.querySelectorAll(".col.mb-4").forEach(function (col) {
       // Make each column full width with responsive sizing
-      col.classList.add("col-12", "col-lg-10");
+      col.classList.add("col-12", "col-lg-8");
 
       // Hide gallery cards
       const galleryCard = col.querySelector("#gallery-card");
@@ -168,8 +179,23 @@ document.addEventListener("DOMContentLoaded", function () {
   gridViewBtn.addEventListener("click", showGridView);
   listViewBtn.addEventListener("click", showListView);
 
-  // Initialize with grid view (since it's set as active in your HTML)
-  showGridView();
+  // Handle resize events to switch views when screen size changes
+  window.addEventListener("resize", function () {
+    if (isMobile()) {
+      showListView();
+    } else if (gridViewBtn.classList.contains("active")) {
+      showGridView();
+    } else {
+      showListView();
+    }
+  });
+
+  // Initialize with the appropriate view based on screen size
+  if (isMobile()) {
+    showListView();
+  } else {
+    showGridView();
+  }
 });
 
 document.addEventListener("scroll", function () {
